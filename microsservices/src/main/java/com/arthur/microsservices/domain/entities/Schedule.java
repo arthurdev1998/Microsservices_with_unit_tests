@@ -15,7 +15,7 @@ import lombok.Data;
 @Entity
 @Table(name="AGENDA")
 @Data
-public class schedule {
+public class Schedule {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,6 +28,6 @@ public class schedule {
 	private LocalDateTime dataCriacao;
 	
 	@ManyToOne
-	private patient paciente;
+	private Patient paciente;
 	
 }
